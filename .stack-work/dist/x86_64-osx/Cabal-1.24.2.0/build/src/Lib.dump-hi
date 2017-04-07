@@ -1,0 +1,55 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-07 00:04:53.994298 UTC
+
+interface tennis-kata-hs-0.1.0.0-7LYADaKW0xO4B0QIeBOVsZ:Lib 8002
+  interface hash: 61fbe4bfd3b0c71942a65fb8faaa0d46
+  ABI hash: 247647a8e4f0673fc6c92efc81558c58
+  export-list hash: 2b2a4779d3f68f94171b7997c2edb1d2
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Lib.calculateScore
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+7232832ea45569f6d07cf390e7760101
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Lib.$trModule2 Lib.$trModule1) -}
+8416c58ce1624d31fc3225dbc34255fd
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Lib"#) -}
+f52089fd3ae1dae8d975eb8c32b6fcd7
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "tennis-kata-hs-0.1.0.0-7LYADaKW0xO4B0QIeBOVsZ"#) -}
+ac41e55a138bad55c709232b7e300f24
+  calculateScore ::
+    GHC.Real.Integral int => int -> int -> GHC.Base.String
+  {- Arity: 3,
+     Strictness: <S(SLLLLLLLL),U(U,A,A,A,A,A,A,A,A)><L,U><L,U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

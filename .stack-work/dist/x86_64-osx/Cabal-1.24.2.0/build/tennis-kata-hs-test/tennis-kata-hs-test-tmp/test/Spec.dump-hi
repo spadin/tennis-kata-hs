@@ -1,0 +1,839 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-06 23:48:57.193625 UTC
+
+interface main@main:Main 8002
+  interface hash: 143b1d5e443df143d868ab3af7e2b015
+  ABI hash: bae0594b39dbcf82418b979a19f47ab5
+  export-list hash: 50a94acdc723afa3bb3fef5d2b54313b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 92299149acea75b4ceec2c41a6bf1b50
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI
+                      array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      call-stack-0.1.0@call-stack-0.1.0-FYVrCPXGP9EGAuTW32963O
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+                      tennis-kata-hs-0.1.0.0@tennis-kata-hs-0.1.0.0-7LYADaKW0xO4B0QIeBOVsZ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+import  -/  HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI:Test.HUnit 430ab81af3668b12bae4950025858f90
+import  -/  HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI:Test.HUnit.Base cd997e8ff65c19ac22867304478c3a62
+import  -/  HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI:Test.HUnit.Lang 9ab538688b5ed60ffdede50aabf29dd6
+import  -/  HUnit-1.5.0.0@HUnit-1.5.0.0-DvjF79OHhCC7SzfeEty4OI:Test.HUnit.Text dae9d5556dfb2f57d4dfe82107af90ee
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  tennis-kata-hs-0.1.0.0@tennis-kata-hs-0.1.0.0-7LYADaKW0xO4B0QIeBOVsZ:Lib 247647a8e4f0673fc6c92efc81558c58
+d6831ef04cb9301b090dfae6f7bb7ec7
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule2 Main.$trModule1) -}
+847d9fc3b8e6f0b424199f36b4999bb2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Main"#) -}
+24ef6042833e75ffd7aa98b83ecca98d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "main"#) -}
+a9cdfa8fe2e6a382f5ff7f012df75904
+  main :: GHC.Types.IO Test.HUnit.Base.Counts
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <Test.HUnit.Base.Counts>_R)) -}
+ef84c063ccbfbd24f856f146c8eb0d8e
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Test.HUnit.Base.Counts #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case Test.HUnit.Text.runTestTT3 of ww { Test.HUnit.Text.PutText ww1 ww2 ->
+                 case Test.HUnit.Text.$wrunTestText
+                        @ GHC.Types.Int
+                        ww1
+                        ww2
+                        Main.main2
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { (,) counts' ds ->
+                 case ds of wild1 { GHC.Types.I# ds2 ->
+                 case ds2 of ds3 {
+                   DEFAULT
+                   -> GHC.IO.failIO1
+                        @ Test.HUnit.Base.Counts
+                        Test.HUnit.Text.runTestTT2
+                        ipv
+                   0# -> (# ipv, counts' #) } } } } }) -}
+622b5dbe27877f716b1149e8523ef433
+  main10 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main54
+                   Main.main11) -}
+aa1f7ebd4ea4c3f05156602a0e078ea2
+  main100 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 2 - 2, returns thirty - thirty"#) -}
+c6d930b44c11a094c62f2fe1ab33c466
+  main101 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main102
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+007fbecb92baf78406ed2be0a2fdd6cd
+  main102 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main103
+                   GHC.Stack.Types.EmptyCallStack) -}
+033eecdd8618e78ed776bc53540772e4
+  main103 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main106
+                   Main.main105
+                   Main.main104
+                   Main.main94) -}
+5e496d0bf46bea0957d568e837ab6648
+  main104 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 22#) -}
+10a79c4ebab439a08d9efc10088e5dd4
+  main105 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 39#) -}
+678744abd4fd00d5703a874d53d15aec
+  main106 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 20#) -}
+af52005d0a57f2275ac1348ada09a1c8
+  main107 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main108) -}
+582729324c0c25101b03826efac8eadb
+  main108 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main113
+                   Main.main112
+                   Main.main111
+                   Main.main109) -}
+8d66cb454cb3b497e5db69e94df9283e
+  main109 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main110
+                   Main.main110) -}
+01057293f7390ee498eb0c8a22c22267
+  main11 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main44
+                   Main.main12) -}
+cab8f0d6e28a5092183e3b4440dcf646
+  main110 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+9097c549832b39f9fad2c6f46c35e94c
+  main111 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fifteen - fifteen"#) -}
+7b06580fc40d1d7a52220fdf5b804815
+  main112 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 1 - 1, returns fifteen - fifteen"#) -}
+da545e73ea67355763ce3cbc0ae434a2
+  main113 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main114
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+dde4251f1528c4ed03c06995fbb77504
+  main114 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main115
+                   GHC.Stack.Types.EmptyCallStack) -}
+ea5366dab2a093aa791d719b3d08f229
+  main115 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main117
+                   Main.main105
+                   Main.main116
+                   Main.main65) -}
+994957a1777c0f3ac4f87ab89d50d27f
+  main116 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 17#) -}
+061ea3e5b95184a131a475f0a80d0621
+  main117 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 15#) -}
+cc81612f8c12b52aef6a5cf96105497a
+  main118 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main119) -}
+d34a3d6836629baaafb98a536ed330c8
+  main119 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main124
+                   Main.main123
+                   Main.main122
+                   Main.main120) -}
+f8f32cb380ea5c3c003e376cbaf3ffe4
+  main12 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main31
+                   Main.main13) -}
+e21effee0e1ddef19d2110734278f9c1
+  main120 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main110
+                   Main.main121) -}
+5c7d166b17df480c0e51810526b87310
+  main121 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+dc60290c3dabd2bb46ae48b6a07e6543
+  main122 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fifteen - love"#) -}
+c588dd8522f4f94ed641bb0eee79e413
+  main123 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 1 - 0, returns fifteen - love"#) -}
+e6ee4da019de026fbe57595bf1dd93e0
+  main124 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main125
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+6aa2a02b6ec137465e917a01ba092c24
+  main125 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main126
+                   GHC.Stack.Types.EmptyCallStack) -}
+93779f58679b5e2cf69c7241f114f6b4
+  main126 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main128
+                   Main.main42
+                   Main.main127
+                   Main.main42) -}
+9e9c2a5f09d086a53bb5e139abf34ed1
+  main127 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 12#) -}
+bfe65a42f3b4c7b27bfc153a599dbab6
+  main128 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 10#) -}
+ae0257732c048b798621c8144492c090
+  main129 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main130) -}
+79a4083f72740079474d81a8fd4bfcfd
+  main13 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main14
+                   (GHC.Types.[] @ Test.HUnit.Base.Test)) -}
+aa1cb732e1d594bdd61359fa4a4ee5e6
+  main130 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main134
+                   Main.main133
+                   Main.main132
+                   Main.main131) -}
+6dbc12f51288c9da65dbabf752bc3942
+  main131 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main121
+                   Main.main121) -}
+056872855181cc6a176694805de912c1
+  main132 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "love - love"#) -}
+a0ec29ede9c738914049ab7a11841e0e
+  main133 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 0 - 0 returns love - love"#) -}
+113683cf8a63d75dfadf6ff998969149
+  main134 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main135
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+5ad717337ec61d10051baa96d6a37923
+  main135 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main136
+                   GHC.Stack.Types.EmptyCallStack) -}
+d0c5f6b12265da0e32cc771c2edc77a9
+  main136 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main138
+                   Main.main105
+                   Main.main137
+                   Main.main63) -}
+986c41b8678a2de4a46ccea483e8e7bb
+  main137 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 7#) -}
+b4d9643dc375f79bfd3d8e6a254c627d
+  main138 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 5#) -}
+9210658ff79562898e395685d286b1db
+  main139 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Test.HUnit.Base.Counts #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ Test.HUnit.Base.Counts
+                   Main.main1
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0] <Test.HUnit.Base.Counts>_R))) -}
+9157778ae5fa10b8c4b57946b38509a3
+  main14 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main15) -}
+857349e3d680027cf33a2457f9919803
+  main15 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main20 Main.main19 Main.main18 Main.main16) -}
+39b1853693bc68448434b6287995341a
+  main16 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main17
+                   Main.main17) -}
+bad5f25f71ea8311eca434ca809116b9
+  main17 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+3766a910463bee442762de6f0096e0e9
+  main18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "deuce"#) -}
+43fcf3b57baa1e80e943191cadeee5f9
+  main19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 5 - 5, returns deuce"#) -}
+ecc7ae55b578b97f90da28bf720f8a54
+  main2 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestList Main.main3) -}
+4a67d57a2f5c36fa21fc971bbed4a92b
+  main20 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main21
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+d43d0d8e19a0a5624e00d6f9040e92b0
+  main21 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main22
+                   GHC.Stack.Types.EmptyCallStack) -}
+3d4c45f1d754edd9f61c5bafe69db331
+  main22 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main26
+                   Main.main25
+                   Main.main24
+                   Main.main23) -}
+ebab5e82441941e4095bd1ddb9dca00c
+  main23 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 31#) -}
+14c27164e7b8ec18981e906c1cdd4274
+  main24 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 57#) -}
+b268d330917b94b410592c7fdcd840f7
+  main25 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 48#) -}
+8401698c5a4fd2915d40023432b10f65
+  main26 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 55#) -}
+6acd45e047538c3c4d221081c7d14d04
+  main27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "test/Spec.hs"#) -}
+8f4367b25176dda071bbde1492f71f53
+  main28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Main"#) -}
+26adf40a1b713545a4854908ce53a39d
+  main29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "main"#) -}
+b1acaa0eeee0dd5154f98af815878382
+  main3 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main129
+                   Main.main4) -}
+4cc1276f7853387b2682b56a8fbd3ca5
+  main30 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "assertEqual"#) -}
+2df5ac42c62f6928a4da55d02c636b70
+  main31 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main32) -}
+5d9dfeacdfdcf630bea6c8efeabf0fb1
+  main32 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main37 Main.main36 Main.main35 Main.main33) -}
+ab20f33d47eed26bea615f3265e0a8cd
+  main33 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main34
+                   Main.main17) -}
+5f6251628e01cfebcb74a7da34dc2b8b
+  main34 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+1c1767512a9e2fba85fa0f143a98a6fb
+  main35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "winner b"#) -}
+9c46abec32f60c8ec969758aa61fbe26
+  main36 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 3 - 5, returns winner b"#) -}
+fa89cf55eb19b859b24a1761baa3b0e9
+  main37 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main38
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+228068cace881fd2271b1dc2aa24bae5
+  main38 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main39
+                   GHC.Stack.Types.EmptyCallStack) -}
+faa61f729abdc39d132f1121245a9ca1
+  main39 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main43
+                   Main.main42
+                   Main.main41
+                   Main.main40) -}
+95dba17da0ff0387b67c45d727b053fe
+  main4 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main118
+                   Main.main5) -}
+8e45c0b544136b8d282af0af2f9a6ea0
+  main40 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 34#) -}
+0fb8bfc00a326009096692f80308c5fa
+  main41 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 52#) -}
+4d3531908aa489da5aeb79a90d8326d0
+  main42 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 40#) -}
+6cc0de7cebac875f031b1034165968a3
+  main43 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 50#) -}
+0f2fafa42dd7318ae8b90cf3f9e39690
+  main44 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main45) -}
+494c0208b1767125a20ea613db1462c6
+  main45 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main49 Main.main48 Main.main47 Main.main46) -}
+cc6d9bbda87692a5c72afa8120cc7f07
+  main46 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main17
+                   Main.main34) -}
+051e85424505d39c82a7b706f1db528a
+  main47 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "winner a"#) -}
+1dd0cbd1909a4205541b0e448fe7d463
+  main48 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 5 - 3, returns winner a"#) -}
+22cbc0004ee27661f0f6f3637268a772
+  main49 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main50
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+ea15cc2b6c55be54c9887312def87943
+  main5 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main107
+                   Main.main6) -}
+8de1a119d3cfa90bfc338d2f492acf9f
+  main50 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main51
+                   GHC.Stack.Types.EmptyCallStack) -}
+e4e7073ba091fab71590099470fe64e1
+  main51 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main53
+                   Main.main42
+                   Main.main52
+                   Main.main40) -}
+ed662a832878cafef0f6607709405ade
+  main52 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 47#) -}
+46aae5e6151f2e3bfd8ad19047d7e8fc
+  main53 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 45#) -}
+046b02cecd4167ec22aa15c9bfe4f92d
+  main54 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main55) -}
+0423e15968d5d49411d37e8537ce3e46
+  main55 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main60 Main.main59 Main.main58 Main.main56) -}
+704e60ed49e6ce78048a07406d550035
+  main56 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main34
+                   Main.main57) -}
+0b8e9bf8725ffcac5edaf8872ba4a710
+  main57 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+e12a6a70955f1fe21ba07507c8e165c6
+  main58 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "advantage b"#) -}
+14292b408ea9124a0105f5d6ca93b6fd
+  main59 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 3 - 4, returns advantage b"#) -}
+016cde15a14a55edf24e756bce1aa1d3
+  main6 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main96
+                   Main.main7) -}
+9333ad2ee88ef498ea70a26971d43d5f
+  main60 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main61
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+4b9caf1e722d406ecb0cc1bee5b48dc7
+  main61 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main62
+                   GHC.Stack.Types.EmptyCallStack) -}
+66350d91333e81f3daad5b1b0a2b5890
+  main62 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main42
+                   Main.main65
+                   Main.main64
+                   Main.main63) -}
+e8c1b7c1cebeffe54f78500bb20ef930
+  main63 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 37#) -}
+a79a65947c9398ac3c06906154e02f71
+  main64 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 42#) -}
+2c0f944ac41276e42e906b13459936e3
+  main65 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 43#) -}
+818ea6e3954661f9dafe8ed87cbd54a7
+  main66 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main67) -}
+2ac1742a93142f9bde89459a69fdb47d
+  main67 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main71 Main.main70 Main.main69 Main.main68) -}
+ccf22662a6be739b7db44d7f3d2585c5
+  main68 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main57
+                   Main.main34) -}
+063821c3e5389b13340130130d6ecac3
+  main69 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "advantage a"#) -}
+3f71c30d5eac6570ead73e61fe26922a
+  main7 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main84
+                   Main.main8) -}
+fd7f251918bd3ac82bcf0d980a251e3a
+  main70 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 4 - 3, returns advantage a"#) -}
+0e583650ff63e5fce25efaef9052f701
+  main71 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main72
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+09fdc78721daf58b038f7d421a743ccf
+  main72 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main73
+                   GHC.Stack.Types.EmptyCallStack) -}
+af598a4c98bd66253286bc5d3405b26d
+  main73 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main74
+                   Main.main65
+                   Main.main63
+                   Main.main63) -}
+ac6d94b48fba4ae982c33493e4bb11ce
+  main74 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 35#) -}
+8408fdc5885dea182dd07b73240e8c03
+  main75 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main76) -}
+0459c0e9db552443aa2dcd4d1fc2f3fe
+  main76 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main79 Main.main78 Main.main18 Main.main77) -}
+30b91661baddc7ae01791059390aa2d8
+  main77 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main34
+                   Main.main34) -}
+bf5c57e6147a5989544a7d1d15b164d8
+  main78 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 3 - 3, returns deuce"#) -}
+804100e11dc5f02e66f922604828bf5e
+  main79 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main80
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+5976c993518d7fb6f21a7c1a80ffbe5e
+  main8 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main75
+                   Main.main9) -}
+725eac12fce35a43eb720c60cb45a706
+  main80 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main81
+                   GHC.Stack.Types.EmptyCallStack) -}
+6bb21fa06be109c85b4dd1a94e3ccaf1
+  main81 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main83
+                   Main.main65
+                   Main.main82
+                   Main.main23) -}
+3f97d0e944d54dd5f2542b7ea560ec19
+  main82 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 32#) -}
+4fdf2e51295587248b0914066196a59d
+  main83 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 30#) -}
+949ce5fc4aa418fbe8767197b208ef8e
+  main84 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main85) -}
+29d0993d5e98bb0076b758c9c602249e
+  main85 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main90 Main.main89 Main.main88 Main.main86) -}
+42455eb46a85cc7a5aba5df0b03b0e97
+  main86 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main34
+                   Main.main87) -}
+ae7fdf2d93b5b468f9d740c1ba2c68ef
+  main87 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+72cb0d08f2c5914ac7cea86e73eda373
+  main88 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "forty - thirty"#) -}
+ed8ea64a704f4d829874d30e7e468ab9
+  main89 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "calculateScore 3 - 2, returns forty - thirty"#) -}
+e0ecdbc14163ac654d82be5e86efa793
+  main9 :: [Test.HUnit.Base.Test]
+  {- Unfolding: (GHC.Types.:
+                   @ Test.HUnit.Base.Test
+                   Main.main66
+                   Main.main10) -}
+813e9b085a489ba232b0b9363400ad1f
+  main90 ::
+    GHC.Base.String
+    -> [GHC.Types.Char]
+    -> [GHC.Types.Char]
+    -> Test.HUnit.Lang.Assertion
+  {- Unfolding: (Test.HUnit.Lang.assertEqual
+                   @ [GHC.Types.Char]
+                   Main.main91
+                     `cast`
+                   (Sym (GHC.Classes.N:IP[0]
+                             <"callStack">_N <GHC.Stack.Types.CallStack>_N))
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Show.$fShow[]_$s$fShow[]1) -}
+debf005a4df66de007173382daafbe1d
+  main91 :: GHC.Stack.Types.CallStack
+  {- Unfolding: (GHC.Stack.Types.PushCallStack
+                   Main.main30
+                   Main.main92
+                   GHC.Stack.Types.EmptyCallStack) -}
+561a7d5822e297b0bcb32f61db817f56
+  main92 :: GHC.Stack.Types.SrcLoc
+  {- Unfolding: (GHC.Stack.Types.SrcLoc
+                   Main.main29
+                   Main.main28
+                   Main.main27
+                   Main.main95
+                   Main.main94
+                   Main.main93
+                   Main.main42) -}
+c2aa5c793377c80c9da37ca38203fce0
+  main93 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 27#) -}
+a7c7c9cf922e5b532663bc032ac0be9c
+  main94 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 41#) -}
+0aeb3cb5aebf44f519d6edd7f16f3dc8
+  main95 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 25#) -}
+8f6ebfd9b8467283bbc1fed00b1b790e
+  main96 :: Test.HUnit.Base.Test
+  {- Unfolding: (Test.HUnit.Base.TestCase Main.main97) -}
+5a3148801947d1202d91ab634723abb3
+  main97 :: Test.HUnit.Lang.Assertion
+  {- Unfolding: (Main.main101
+                   Main.main100
+                   Main.main99
+                   Main.main98) -}
+b5255c51c41eadfa373325ea19e9cbf5
+  main98 :: GHC.Base.String
+  {- Unfolding: (Lib.calculateScore
+                   @ GHC.Integer.Type.Integer
+                   GHC.Real.$fIntegralInteger
+                   Main.main87
+                   Main.main87) -}
+0373c3211280303ef023bf9a189a1796
+  main99 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "thirty - thirty"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
